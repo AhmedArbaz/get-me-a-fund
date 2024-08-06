@@ -15,10 +15,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <Navbar/>
-      <div className="min-h-screen">  
-        {/* ais say ham apni height screen kay according rakh sakty hain */}
+     <div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_40%_300px,#d09e07,transparent)]"></div> 
+     {/* ya navbar pay vo shading vala color la raha hay */}
+      <div className="min-h-[87vh] relative h-full w-full bg-slate-900">  
       {children}
+      
       </div>
+    
     <Footer/>
       </body>
     </html>

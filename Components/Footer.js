@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      I am Footer
-    </div>
+    <footer className='bg-slate-700 text-white flex justify-between items-center px-4 h-16'>
+      <p className="text-center">Copyright &copy;Get me a Chai - All rights reserved</p>
+    </footer>
   )
 }
 
