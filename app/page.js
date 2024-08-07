@@ -2,16 +2,38 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-  <div className="text-white flex flex-col justify-center items-center h-[44vh] ">
-    <div className="font-bold text-3xl">Buy me a Chai</div>
+    <>
+  <div className="text-white flex flex-col justify-center items-center h-[44vh] gap-4">
+    <div className="font-bold text-5xl flex justify-center items-center">Buy me a Chai</div>
+    <span>
+  <Image src="/hot-coffee.gif" width={88} height={70} alt="gif"/>
+    </span>
     <p>
       A crowdFunding platform for creators. Get funded by your fans and followers. Start now!
     </p>
     <div>
-      <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Now</button>
+    <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-900 text-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+Start Now
+</span>
+</button>
+    <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-900 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 text-white">
+Signup Now
+</span>
+</button>
       
       
     </div>
   </div>
+  <div className="bg-white h-1 opacity-10">
+
+  </div>
+
+  <h1>Your fans can buy you a Chai</h1>
+  <div className="flex gap-5">
+    <div className="item"><Image src="/source.gif" width={200} height={200} alt="hello"/></div>
+  </div>
+    </>
   );
 }
