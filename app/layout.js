@@ -15,7 +15,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <Navbar/>
-     <div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_300px,#d09e07,transparent)]"></div> 
      {/* ya navbar pay vo shading vala color la raha hay */}
       <div className="min-h-[87vh] relative h-full w-full bg-slate-900">  
       {children}
