@@ -30,9 +30,9 @@ Signup Now
 
   </div>
 
-<div className="text-white container mx-auto">
+<div className="text-white container mx-auto pb-24 pt-14">
 
-  <h1 className="text-2xl font-bold text-center my-14">Your fans can buy you a Chai</h1>
+  <h1 className="text-3xl font-bold text-center mb-14">Your fans can buy you a Chai</h1>
   <div className="flex gap-5 justify-around">
     <div className="item flex flex-col justify-center items-center">
       <Image className="bg-slate-500 rounded-full p-2" src="/payment.gif" width={88} height={88} alt="hello"/>
@@ -55,6 +55,21 @@ Signup Now
     
   </div>
 </div>
+
+
+
+{/* Next portion for the About Us */}
+<div className="bg-white h-1 opacity-10">
+
+</div>
+
+<div className="text-white container mx-auto pb-24 pt-14 flex flex-col items-center justify-center">
+
+  <h1 className="text-3xl font-bold text-center mb-14">Learn more about Us</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/bdyyin_9izI?si=_lXV9ujOuU3qNfkL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+  </div>
+
+
     </>
   );
 }
