@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <>
   <div className="text-white flex flex-col justify-center items-center h-[44vh] gap-4">
-    <div className="font-bold text-5xl flex justify-center items-center">Buy me a Chai</div>
+    <div className="font-bold text-5xl flex justify-center items-center">Buy me a Chai
     <span>
-  <Image src="/hot-coffee.gif" width={88} height={70} alt="gif"/>
-    </span>
+  <Image src="/hot-coffee.gif" width={80} height={80} alt="gif"/>
+    </span></div>
     <p>
       A crowdFunding platform for creators. Get funded by your fans and followers. Start now!
     </p>
@@ -30,10 +30,16 @@ Signup Now
 
   </div>
 
+<div className="text-white">
+
   <h1>Your fans can buy you a Chai</h1>
   <div className="flex gap-5">
-    <div className="item"><Image src="/source.gif" width={200} height={200} alt="hello"/></div>
+    <div className="item bg-slate-500 rounded-full flex flex-col justify-center items-center p-7">
+      <Image src="/payment.gif" width={88} height={88} alt="hello"/>
+    <p>Fund Yourself</p>
+    </div>
   </div>
+</div>
     </>
   );
 }
