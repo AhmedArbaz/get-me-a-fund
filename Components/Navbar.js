@@ -1,8 +1,19 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSession, signIn, signOut } from "next-auth/react"
+// puri app ko layout ko ham nay sessionwrapper say wrap kia tha ab phir jaha session ki need hay use kar rahay hain
 
 const Navbar = () => {
+  // ya next auth say copy kia hay 
+  const { data: session } = useSession()
+  if(session) {
+    return <>
+      Signed in as {session.user.email} <br/>
+      <button onClick={() => signOut()}>Sign out</button>
+    </>
+  }
   return (
     <nav className="bg-slate-700 text-white flex justify-between items-center px-4 h-16">
       <div className="logo font-bold text-lg flex justify-center items-center">
