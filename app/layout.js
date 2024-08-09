@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 
       <Navbar/>
      {/* ya navbar pay vo shading vala color la raha hay */}
-      <div className="min-h-[87vh] relative h-full w-full bg-slate-900">  
+      <div className="min-h-[87vh] relative h-full w-full bg-slate-900 text-white">  
       {children}
       
       </div>
