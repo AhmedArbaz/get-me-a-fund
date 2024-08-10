@@ -1,8 +1,17 @@
 "use client"
 import React from 'react'
 import { useSession, signIn, signOut } from "next-auth/react"
+import { useRouter } from 'next/navigation'
 // puri app ko layout ko ham nay sessionwrapper say wrap kia tha ab phir jaha session ki need hay use kar rahay hain
 const Login = () => {
+
+    // ya ham kar rahy hain kay ager jasay ham login karin to direct redirect ho jain /dashboard pay 
+  const { data: session } = useSession()
+    if(session) {
+    const router = useRouter()
+    router.push('/dashboard')
+  }
+//   ya kia hay kay ager session ho to /dashboard pay chalay jao
   return (
     <div className='text-white py-14 container mx-auto'>
         
