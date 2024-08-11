@@ -27,18 +27,45 @@ const Username = ({params}) => {
 
 
 {/* supporters section */}
-        <div className="payment flex gap-3 w-[80%] mt-16">
-          <div className="supporters w-1/2  bg-slate-700 rounded-lg p-10">
+        <div className="payment flex gap-3 w-[80%] mt-16 ">
+          <div className="supporters w-1/2  bg-slate-700 rounded-lg ">
         {/* Show list of all the supporters as a leaderBoard  */}
         <h2 className='text-2xl text-center font-bold my-5'>Supporters</h2>
                 <ul className='mx-5'>
-                  <li className='my-2 text-slate-200'>Ali Donated $30 with a message &apos;&apos;&apos; </li>
-                  <li className='my-2 text-slate-200'>Ali Donated $30 with a message &apos;&apos;&apos;</li>
-                  <li className='my-2 text-slate-200'>Ali Donated $30 with a message &apos;&apos;&apos;</li>
-                  <li className='my-2 text-slate-200'>Ali Donated $30 with a message &apos;&apos;&apos;</li>
-                  <li className='my-2 text-slate-200'>Ali Donated $30 with a message &apos;&apos;&apos;</li>
-                  <li className='my-2 text-slate-200'>Ali Donated $30 with a message &apos;&apos;&apos;</li>
-                  <li className='my-2 text-slate-200'>Ali Donated $30 with a message &apos;&apos;&apos;</li>
+                  <li className='my-4 flex gap-2 justify-center items-center'>
+                    <img width={30} height={30} className='rounded-full bg-slate-200' src="/person.gif" alt="avatar-image" />
+                    <span className='text-sm'>Ali Donated <span className='font-bold'>$30</span> with a message &apos;
+                    I support you Sir.Lots of💕
+                    </span>
+                  </li>
+
+                  <li className='my-4 flex gap-2 justify-center items-center'>
+                    <img width={30} height={30} className='rounded-full bg-slate-200' src="/person.gif" alt="avatar-image" />
+                    <span className='text-sm'>Ali Donated <span className='font-bold'>$30</span> with a message &apos;
+                    I support you Sir.Lots of💕
+                    </span>
+                  </li>
+
+                  <li className='my-4 flex gap-2 justify-center items-center'>
+                    <img width={30} height={30} className='rounded-full bg-slate-200' src="/person.gif" alt="avatar-image" />
+                    <span className='text-sm'>Ali Donated <span className='font-bold'>$30</span> with a message &apos;
+                    I support you Sir.Lots of💕
+                    </span>
+                  </li>
+
+                  <li className='my-4 flex gap-2 justify-center items-center'>
+                    <img width={30} height={30} className='rounded-full bg-slate-200' src="/person.gif" alt="avatar-image" />
+                    <span className='text-sm'>Ali Donated <span className='font-bold'>$30</span> with a message &apos;
+                    I support you Sir.Lots of💕
+                    </span>
+                  </li>
+                 
+                  <li className='my-4 flex gap-2 justify-center items-center'>
+                    <img width={30} height={30} className='rounded-full bg-slate-200' src="/person.gif" alt="avatar-image" />
+                    <span className='text-sm'>Ali Donated <span className='font-bold'>$30</span> with a message &apos;
+                    I support you Sir.Lots of💕
+                    </span>
+                  </li>
                 </ul>
           </div>
           
