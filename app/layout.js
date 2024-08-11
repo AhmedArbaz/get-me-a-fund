@@ -19,12 +19,12 @@ export default function RootLayout({ children }) {
 
       <Navbar/>
      {/* ya navbar pay vo shading vala color la raha hay */}
-      <div className="min-h-[87vh] relative h-full w-full bg-slate-900 text-white">  
+      <div className="min-h-screen relative h-full w-full bg-slate-900 text-white">  
       {children}
       
-      </div>
     
     <Footer/>
+      </div>
         </SessionWrapper> 
         {/* ya sessionWrapper say puri app ko wrap kar dia ya ham nay banaya components may tha ya authentication data hay app ko ab jaha session ko use karna hay aus may import kar lo  */}
       </body>
