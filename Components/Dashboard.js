@@ -8,7 +8,7 @@ const Dashboard = () => {
   const {data: session} = useSession()
   // So ya condition bana di kay ager login nahi ho gay to login page redirect ho jay ga jasay logout karo gay to 
   const router = useRouter()
-  const [from, setfrom] = useState({});
+  const [form, setform] = useState({});
   
   useEffect(() => {
       if (!session) {
@@ -17,7 +17,7 @@ const Dashboard = () => {
   }, [router, session]);
 
   const handleChange = (e)=>{
-    setfrom({...from,[e.target.name]:e.target.value})
+    setform({...form,[e.target.name]:e.target.value})
   }
 
   return (
